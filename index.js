@@ -26,8 +26,8 @@ const mouseMove = (e) => {
 
         const startIndex = document.querySelector(`[data-row="${startRow}"][data-column="${startColumn}"]`);
         startIndex.innerHTML = "";
-        ghost.style.top = e.clientY  + "px";
-        ghost.style.left = e.clientX + "px";
+        ghost.style.top = e.clientY - 40 + "px";
+        ghost.style.left = e.clientX - 40 + "px";
         // console.log(e.target.dataset.row, e.target.dataset.column);
     }
 }

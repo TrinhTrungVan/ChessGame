@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Orbitron&display=swap');
+
+body{
+    position: relative;
+}
+
+.board {
+    height: 650px;
+    width: 1200px;
+    display: flex;
+    background-color: cadetblue;
+}
+
+.information {
+    width: 200px;
+    box-sizing: border-box;
+    margin: 40px 30px;
+}
+
+.information p {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.information-user {
+    background-color: rgb(121, 201, 204);
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.information-user img {
+    height: 130px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.information-user p {
+    text-align: center;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#chessboard {
+    width: 480px;
+    height: 480px;
+    margin: 60px 30px;
+    border: 25px solid #333;
+}
+
+.square{
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+    cursor: pointer;
+    user-select: none;
+}
+.black {
+    background-color: #999;
+
+}
+.white {
+    background-color: #fff;
+}
+
+#ghost{
+    font-size: 50px;
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.messenger {
+    margin: 20px 20px;
+}
+
+.fa-pause {
+    font-size: 200%;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(24, 110, 110);
+    margin-left: 260px;
+    color: black;
+}
+
+.messenger-display {
+    height: 480px;
+    width: 250px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: rgb(211, 222, 232);
+}
+
+.messenger input {
+    padding: 5px;
+    border-radius: 12px;
+    width: 180px;
+    outline: none;
+}
+
+.messenger button {
+    border-radius: 12px;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgb(26, 144, 167);
+    cursor: pointer;
+}
