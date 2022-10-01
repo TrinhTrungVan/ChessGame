@@ -7,9 +7,12 @@
 }
 
 .sign-in {
-    background-color: rgb(155, 122, 122);
-    width: 70%;
+    /* background-color: rgb(155, 122, 122); */
+    background-image: url("https://thumbs.dreamstime.com/b/chess-game-knight-waiting-right-time-to-move-business-strategy-competitive-concept-copy-space-146478523.jpg");
+    width: 100%;
     height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
     padding: 20px;
     color: white;
 }
@@ -24,21 +27,30 @@
 
 .sign-in-header a {
     text-decoration: none;
-    color: white;
+    color: rgb(189, 142, 142);
 }
 
 .fa-angle-left {
     padding-right: 8px;
+    color: rgb(189, 142, 142);
 }
 
 .sign-in-body {
     margin-top: 100px;
+    border: 1px solid rgb(155, 122, 122);
+    width: 40%;
+    height: 80vh;
+    padding-top: 20px;
+    margin: 50px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 20px;
 }
 
 .sign-in-body-icon {
     font-size: 350%;
     text-align: center;
     margin-bottom: 30px;
+    color: rgb(155, 122, 122);
 }
 
 .fa-chess-rook:hover {
@@ -51,8 +63,13 @@
     justify-content: center;
 }
 
+.sign-in-body-text p {
+    color: rgb(155, 122, 122);
+}
+
 .sign-in-body-text a {
     padding-left: 8px;
+    color: white;
 }
 
 
@@ -65,16 +82,18 @@
 .sign-in-input {
     font-size: 16px;
     padding: 16px;
-    border: none;
-    background-color: rgb(155, 122, 122);
-    color: white;
-    border-bottom: 1px solid rgb(144, 70, 70);
+    margin-top: 10px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    /* background-color: rgb(155, 122, 122); */
+    /* border-bottom: 2px solid rgb(255, 255, 255, 0.3); */
     width: 300px;
     outline: none;
+    transition: border 0.15s linear;
 }
 
 .sign-in-input:focus {
-    border-bottom: 2px solid white;
+    border: 3px solid rgb(189, 142, 142)
 }
 
 ::placeholder {
@@ -90,6 +109,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    background-color: rgb(155, 122, 122);
 }
 
 .sign-in-btn:hover {

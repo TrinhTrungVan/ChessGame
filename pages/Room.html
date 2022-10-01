@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/room.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Room</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="room">
+            <div class="room-header">
+                <a href="./home.html"><i class="fas fa-home"></i></a>
+                <p>Waitting Room</p>
+                <button id="myBtn"><i class="fas fa-plus-circle"></i></button>
+            </div>
+            <div class="list-rooms">
+                <a href="./index.html" class="list-room"><div >
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div></a>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+            </div>
+            <div class="list-rooms">
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+            </div>
+            <div class="list-rooms">
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+                <div class="list-room">
+                    <p>ID: 12345</p>
+                    <p>Des: 1/2</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form action="./index.html">
+                    <span id="close" class="close">&times;</span><br /><br />
+                    <input class="room-input" placeholder="Nickname" /><br />
+                    <input class="room-input" placeholder="RoomID"/><br />
+                    <button class="room-btn">Create Room</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        let modal = document.getElementById('myModal')
+        document.getElementById('myBtn').addEventListener('click', () => {
+            modal.style.display = 'block'
+        })
+        document.getElementsByClassName('close')[0].addEventListener('click', () => {
+            modal.style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>
