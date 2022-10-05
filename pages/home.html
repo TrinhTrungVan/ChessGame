@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;1,600&display=swap"
@@ -17,19 +19,34 @@
 <body>
     <div class="menu">
         <div class="menu-header">
-            <i class="fas fa-info-circle icon"></i>
-            <a href="./SignIn.html" class="menu-sign-in" ><p>Sign In</p></a>
+            <i class="fa-solid fa-xmark"></i>
+            <div class="menu-sign-in">Sign In</div>
         </div>
         <div>
             <h1 class="menu-title">PLAYING CHESS</h1>
         </div>
         <div class="menu-body">
-            <input class="menu-input" placeholder="Nickname" /><br />
-            <input class="menu-input" placeholder="RoomID" /><br />
             <a class="play-button" href="./index.html"><i class="fas fa-play icon "></i></a>
         </div>
     </div>
-
+    <div class="auth-form">
+        <div class="auth-form-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="auth-form-header">
+            <i class="fas fa-chess-rook"></i>
+            <div class="auth-form-header-text">
+                <p class="auth-question">Don't have an account?</p> <span class="switch-mode-auth"> Sign up</span>
+            </div>
+        </div>
+        <form class="auth-form-body">
+            <input placeholder="Username" type="text" class="auth-form-input" />
+            <input placeholder="Password" type="password" class="auth-form-input" />
+            <input placeholder="Repeat Password" type="password" class="repeat-password auth-form-input hidden" />
+            <button class="submit-btn">Sign in</button>
+        </form>
+    </div>
+    <script src="../auth.js"></script>
 </body>
 
 </html>
