@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,700&family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body{
+    position: relative;
+}
+
+.board {
+    /* height: 650px;
+    width: 1200px; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: cadetblue; */
+    background: rgb(52,49,45);
+background: linear-gradient(252deg, rgba(52,49,45,1) 0%, rgba(37,109,133,1) 100%);
+}
+
+.fa-list-ul {
+    font-size: 200%;
+    /* padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(194, 252, 255, 0.4); */
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.information {
+    width: 200px;
+    box-sizing: border-box;
+    margin: 30px 50px 80px 80px;
+}
+
+.information p {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.information-user {
+    /* background-color: rgb(121, 201, 204); */
+    background-color: rgba(194, 252, 255, 0.4); 
+    margin: 40px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.information-user img {
+    height: 130px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.information-user p {
+    text-align: center;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#chessboard {
+    width: 640px;
+    height: 640px;
+    margin: 10px 30px;
+    border: 20px solid #333;
+}
+
+.square{
+    float: left;
+    width: 80px;
+    height: 80px;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+    cursor: pointer;
+    user-select: none;
+}
+.black {
+    background-color: #999;
+
+}
+.white {
+    background-color: #fff;
+}
+
+#ghost{
+    font-size: 50px;
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.messenger {
+    margin: 20px 20px;
+}
+
+.messenger-display {
+    height: 550px;
+    width: 350px;
+    margin: 30px 0px 10px 30px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: rgb(211, 222, 232);
+}
+
+.messenger input {
+    padding: 10px;
+    border-radius: 12px;
+    width: 290px;
+    outline: none;
+    margin: 10px 0px 10px 30px;
+    border: none;
+}
+
+.messenger button {
+    border-radius: 12px;
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(26, 144, 167);
+    cursor: pointer;
+    border: none;
+}
+
+.fa-paper-plane {
+    padding: 0 5px;
+}
