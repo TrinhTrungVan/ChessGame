@@ -42,7 +42,6 @@ body {
 }
 
 .information-user img {
-    height: 130px;
     width: 100px;
     margin-left: 50px;
     margin-top: 20px;
@@ -211,122 +210,6 @@ body {
     font-size: 32px;
 }
 
-/* _______Auth form_______ */
-
-.auth-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 60%;
-    height: 600px;
-    position: absolute;
-    top: 100px;
-    left: 20%;
-    border-radius: 8px;
-    background: linear-gradient(135deg, rgba(37, 109, 133, 1) 0%, rgba(173, 221, 208, 1) 100%);
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.25s linear;
-}
-
-.auth-form-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    font-size: 32px;
-    top: 24px;
-    right: 32px;
-    transition: opacity 0.1s linear, transform 0.2s linear;
-    margin-left: 20px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.auth-form-close:hover {
-    transform: rotate(90deg);
-    opacity: 0.7;
-}
-
-.auth-form-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.auth-form-header i {
-    font-size: 48px;
-    margin-top: 80px;
-}
-
-.auth-form-header-text {
-    font-size: 20px;
-    text-align: center;
-    margin-top: 36px;
-    cursor: default;
-}
-
-.auth-form-header-text span {
-    text-decoration: underline;
-    font-size: 20px;
-    color: rgba(37, 109, 133, 1);
-    margin-top: 10px;
-    cursor: pointer;
-    transition: opacity 0.2s linear;
-}
-
-.auth-form-header-text span:hover {
-    opacity: 0.6;
-}
-
-.auth-form-body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 68px;
-}
-
-.auth-form-input {
-    width: 240px;
-    height: 48px;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    outline: 1px solid white;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    transition: outline 0.2s linear;
-}
-
-.auth-form-input.hidden {
-    display: none;
-}
-
-.auth-form-input:focus,
-.auth-form-input:hover {
-    outline: 3px solid #4c6793;
-}
-
-.auth-form-body .submit-btn {
-    text-align: center;
-    width: 240px;
-    height: 48px;
-    font-size: 20px;
-    border-radius: 4px;
-    margin-top: 18px;
-    border: none;
-    background-color: #d2daff;
-    transition: opacity 0.2s linear, transform 0.2s linear;
-}
-
-.auth-form-body .submit-btn:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
-}
-
 /* _______Room______ */
 
 .background {
@@ -465,4 +348,8 @@ body {
     /* color: #000; */
     text-decoration: none;
     cursor: pointer;
+}
+
+.left {
+    background-color: red;
 }
